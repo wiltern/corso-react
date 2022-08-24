@@ -65,7 +65,7 @@ const App = () => {
                 exact 
                 render={() =>(
                   <>
-                      <AddTask handleTaskAddition={handleTaskAddition}/>
+                      <AddTask handleTaskAddition={handleTaskAddition} />
                       <Tasks 
                           tasks={tasks} 
                           handleTaskClick={handleTaskClick}

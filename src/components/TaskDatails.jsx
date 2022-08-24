@@ -1,11 +1,17 @@
 import React from 'react';
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom' 
 
-import Button from './Button'
+import Button from './Button';
+
 import './TaskDetails.css';
 
 const TaskDatails = () => {
     const params = useParams(); 
+    const history = useNavigate();
+
+    const handleBackButtonClick = () => {
+        history.goBack();
+    };
 
     return ( 
         <>
