@@ -18,10 +18,11 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion })=> {
             <div className='task.title' onClick={() => handleTaskClick(task.id)}>
                 {task.title}
             </div>
+
             <div className='buttons-container'>
                 <button
-                className='remove-task-button' 
-                onClick={() => handleTaskDeletion(task.id)}
+                    className='remove-task-button' 
+                    onClick={() => handleTaskDeletion(task.id)}
                 >
                     <CgClose />
                 </button>
@@ -32,9 +33,6 @@ const Task = ({ task, handleTaskClick, handleTaskDeletion })=> {
             </div>
         </div>
     )
-
-    
-    // return <div className='task-container'>{task.title}</div>
 };
  
 export default Task; 

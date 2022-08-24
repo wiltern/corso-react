@@ -16,11 +16,13 @@ const TaskDatails = () => {
     return ( 
         <>
             <div className='back-button-container'>  
-                <Button>Voltar</Button>
+                <Button onClick={handleBackButtonClick}>Voltar</Button>
             </div>
             <div className="task-datails-container">
                 <h2>{params.taskTitle}</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, perferendis! Facilis itaque est repellat dolorem!</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, perferendis! Facilis itaque est repellat dolorem!
+                </p>
             </div>
         </>
      );
